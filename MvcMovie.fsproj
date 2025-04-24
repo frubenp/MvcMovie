@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Infrastructure\DecimalModelBinderProvider.fs" />
+    <Compile Include="Models\Movie.fs" />
+    <Compile Include="Models\MovieGenreViewModel.fs" />
+    <Compile Include="DataContext\MvcMovieContext.fs" />
+    <Compile Include="Models\SeedData.fs" />
+    <Compile Include="Models\ErrorViewModel.fs" />
+    <Compile Include="Controllers\HomeController.fs" />
+    <Compile Include="Controllers\MoviesController.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Giraffe" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="9.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
+    <PackageReference Include="NuGet.VisualStudio" Version="17.13.2" />
+  </ItemGroup>
+
+</Project>
